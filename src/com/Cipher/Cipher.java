@@ -5,7 +5,7 @@ import java.util.StringTokenizer;
 public abstract class Cipher {
 
     private String  message;
-    StringBuffer    encrypted_message = new StringBuffer();
+    StringBuffer    encrypted_message, decypted_message;
 
     public Cipher(String text){
         message = text;
@@ -23,8 +23,30 @@ public abstract class Cipher {
             s = encode(s) + " ";
             encrypted_message.append(s);
         }
-
     }
+
+    public final void decrypt(String message){
+        /* The encoded message string is tokenized into individual words,
+         * and each word is encoded by calling the decode method
+         */
+        decypted_message = new StringBuffer();
+        StringTokenizer words = new StringTokenizer(message);
+
+        while(words.hasMoreTokens()){
+            String s = words.nextToken();
+            s = decode(s) + " ";
+            decypted_message.append(s);
+        }
+    }
+
+    public String getEcodedMessage(){
+        return encrypted_message.toString();
+    }
+
+    public String getDecodedMessage(){
+        return decypted_message.toString();
+    }
+
     public abstract String encode(String s);
     public abstract String decode(String s);
 }
