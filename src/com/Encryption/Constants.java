@@ -1,4 +1,4 @@
-package com.Cipher;
+package com.Encryption;
 
 public interface Constants {
   final int WRAP_AROUND = 26;

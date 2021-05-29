@@ -1,4 +1,4 @@
-package com.Cipher;
+package com.Encryption;
 
 import java.util.StringTokenizer;
 
@@ -39,7 +39,7 @@ public abstract class Cipher implements Constants{
         }
     }
 
-    public String getEcodedMessage(){
+    public String getEncodedMessage(){
         return encrypted_message.toString();
     }
 
