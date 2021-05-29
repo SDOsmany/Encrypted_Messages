@@ -1,7 +1,7 @@
 package com.Cipher;
 
 public class Transpose extends Cipher{
-    Transpose(String s){
+    public Transpose(String s){
         super(s);
     }
 
