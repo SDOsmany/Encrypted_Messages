@@ -2,7 +2,7 @@ package com.Cipher;
 
 import java.util.StringTokenizer;
 
-public abstract class Cipher {
+public abstract class Cipher implements Constants{
 
     private String  message;
     StringBuffer    encrypted_message, decypted_message;

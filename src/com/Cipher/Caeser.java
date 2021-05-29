@@ -11,12 +11,12 @@ public class Caeser extends Cipher{
     }
 
     public String decode(String word){
-        return code(word, Constants.ENCODE_SHIT);
+        return code(word, Constants.ENCODE_SHIFT);
     }
 
     String code(String word, int SHIFT){
         StringBuffer result = new StringBuffer();
-        for(int i;i<word.length();i++){
+        for(int i=0;i<word.length();i++){
             char ch = word.charAt(i);
             ch = determineCharacter(ch, SHIFT);
             result.append(ch);
