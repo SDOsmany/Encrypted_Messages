@@ -23,7 +23,10 @@ Still yet another cipher method is the `Reverser cipher`. This method does not o
 in each word, but as does the Transposition cipher, but it also reverses the result generated from the 
 Transposition cipher. Hence the original message the `quick brown fox` becomes `xof nworb kciuq eht`
 
+<br />
+
 `Class design`
+
 Here are three Cryptography methods – `Caesar`, `Transposition` and `Reverser`. They all have 
 something in common. They encrypt and decrypt messages. That is, they take a string of words and 
 translate each word using the encoding algorithm appropriate for that cipher. Thus each class cipher 
