@@ -4,7 +4,6 @@ public class Reverser extends Transpose {
 
     public Reverser(String s){
         super(s);
-        System.out.println("This is inside of reverser");
     }
 
     public String reverseText(String word){
