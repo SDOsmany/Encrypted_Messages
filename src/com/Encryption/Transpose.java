@@ -1,4 +1,4 @@
-package com.Cipher;
+package com.Encryption;
 
 public class Transpose extends Cipher{
     public Transpose(String s){

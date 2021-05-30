@@ -1,4 +1,4 @@
-package com.Cipher;
+package com.Encryption;
 
 public class Caeser extends Cipher{
 
@@ -11,7 +11,7 @@ public class Caeser extends Cipher{
     }
 
     public String decode(String word){
-        return code(word, Constants.ENCODE_SHIFT);
+        return code(word, Constants.DECODE_SHIFT);
     }
 
     String code(String word, int SHIFT){
