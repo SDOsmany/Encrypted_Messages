@@ -27,9 +27,10 @@ Transposition cipher. Hence the original message the `quick brown fox` becomes `
 Here are three Cryptography methods – `Caesar`, `Transposition` and `Reverser`. They all have 
 something in common. They encrypt and decrypt messages. That is, they take a string of words and 
 translate each word using the encoding algorithm appropriate for that cipher. Thus each class cipher 
-will need polymorphic `encode()` and `decode()` methods, which take a word and encodes and decodes 
+will need polymorphic encode() and decode() methods, which take a word and encodes and decodes 
 it according to the rule of the particular cipher. 
-From a design perspective, the `encrypt()` method and the `decrypt()` methods will be the same for 
+
+From a design perspective, the encrypt() method and the decrypt() methods will be the same for 
 every class. They simply break message into words and have each word encode or decode. However, 
 the encode and decode methods will be different for each cipher. The figure shows a hierarchy of the 
 classes.
